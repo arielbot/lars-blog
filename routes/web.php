@@ -27,16 +27,16 @@ Route::get('/', function () {
 
     // ddd($document->matter('title'));
    
-    return view('posts', [
-        'posts' => Post::all();
-    ]);
+    // return view('posts', [
+    //     'posts' => Post::all();
+    // ]);
 });
 
-Route::get('posts/{post}', function ($slug) {
-    // find post and pass to view 'post'
-    $post = Post::find($slug);
+// Route::get('posts/{post}', function ($slug) {
+//     // find post and pass to view 'post'
+//     $post = Post::find($slug);
 
-    return view('post', [
-        'post' => Post::find($slug);
-    ]);
-});
+//     return view('post', [
+//         'post' => Post::find($slug);
+//     ]);
+// });
